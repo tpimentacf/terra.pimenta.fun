@@ -36,7 +36,7 @@ resource "cloudflare_record" "record_3" {
 
 resource "cloudflare_record" "record_txt1" {
   zone_id = cloudflare_zone.zone.id
-  name    = "terra.pimenta.fun"
+  name    = "terraform.pimenta.fun"
   type    = "TXT"
   content = "v=spf1 mx a:mail103.pimenta.fun include:spf.protection.outlook.com -all"
   ttl     = 3600

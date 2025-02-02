@@ -8,7 +8,7 @@ resource "cloudflare_ruleset" "zone_custom_rules" {
 
   rules {
     action      = "block"
-    expression  = "(http.host wildcard \"test.pimenta.fun\" and ip.geoip.country ne \"PT\")"
+    expression  = "(http.host wildcard \"terraform.pimenta.fun\" and ip.geoip.country ne \"PT\")"
     description = "Block requests from country PT"
     enabled     = true
   }

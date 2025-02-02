@@ -13,7 +13,7 @@ resource "cloudflare_snippet_rules" "path_snippet_rule" {
   zone_id = cloudflare_zone.zone.id
   rules {
     enabled      = true
-    expression   = "http.host eq \"terra.pimenta.fun\" and http.request.uri.path eq \"/snippet\""
+    expression   = "http.host eq \"terraforma.pimenta.fun\" and http.request.uri.path eq \"/snippet\""
     description  = "Trigger snippet on specific host & path"
     snippet_name = "my_test_snippet_1"
   }
