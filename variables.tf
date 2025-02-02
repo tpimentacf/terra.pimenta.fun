@@ -5,7 +5,7 @@ variable "cloudflare_account_tag" {
 
 variable "cloudflare_zone_name" {
   type    = string
-  default = "terra.pimenta.fun"
+  default = "terraform.pimenta.fun"
 }
 
 variable "cloudflare_zone_plan" {

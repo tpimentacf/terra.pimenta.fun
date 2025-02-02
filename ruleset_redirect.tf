@@ -15,7 +15,7 @@ resource "cloudflare_ruleset" "redirect_from_value_example" {
       from_value {
         status_code = 301
         target_url {
-          value = "api.terra.pimenta.fun/newpath"
+          value = "api.terraforma.pimenta.fun/newpath"
         }
         preserve_query_string = true
       }
@@ -26,7 +26,7 @@ resource "cloudflare_ruleset" "redirect_from_value_example" {
   rules {
     description = "Dynamic Redirects from value with concatenated domain and path"
     enabled     = true
-    expression  = "(http.host matches \"(httpbin.|)terra.pimenta.fun\") and (http.request.uri.path.extension eq \"png\")"
+    expression  = "(http.host matches \"(httpbin.|)terraforma.pimenta.fun\") and (http.request.uri.path.extension eq \"png\")"
     action      = "redirect"
     action_parameters {
       from_value {

@@ -5,7 +5,7 @@ variable "file_extensions" {
 # Page rule to define cache TTL 
 resource "cloudflare_page_rule" "cache_ttl_css_js" {
   zone_id  = cloudflare_zone.zone.id
-  target   = "api.test.pimenta.fun/*.{${join(",", var.file_extensions)}}" # "example.com/*.{jpg,jpeg,png,gif,css,js}" # Group of extensions
+  target   = "api.terraform.pimenta.fun/*.{${join(",", var.file_extensions)}}" # "example.com/*.{jpg,jpeg,png,gif,css,js}" # Group of extensions
   priority = 1
   actions {
     cache_level       = "cache_everything"
