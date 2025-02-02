@@ -31,7 +31,7 @@ resource "cloudflare_zone_settings_override" "zone-settings" {
     ssl                   = "full"
     tls_1_3               = "zrt"
     true_client_ip_header = "on"
-    universal_ssl         = "on"
+    universal_ssl         = "off"
     websockets            = "on"
     zero_rtt              = "on"
     min_tls_version       = "1.2"
