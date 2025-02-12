@@ -23,13 +23,13 @@ resource "cloudflare_ruleset" "transform_uri_rule_path" {
 
   rules {
     action     = "rewrite"
-    expression = "(starts_with(http.request.uri.path, \"/resources/\") and http.host ne \"r2.terraforma.pimenta.fun\")"
+    expression = "(starts_with(http.request.uri.path, \"/resources/\") and http.host ne \"r2.dev1.pimenta.fun\")"
     description = "Rewrite path"
     enabled    = false
     action_parameters {
       uri {
         path {
-          expression = "concat(\"https://r2.terraforma.pimenta.fun\", http.request.uri.path)"
+          expression = "concat(\"https://r2.dev1.pimenta.fun\", http.request.uri.path)"
         }
       }
     }
@@ -45,7 +45,7 @@ resource "cloudflare_ruleset" "transform_uri_http_headers" {
   phase       = "http_request_late_transform"
 
   rules {
-    expression  = "(http.host eq \"httpbin.terraforma.pimenta.fun\" and http.request.uri.path eq \"/headers\")"
+    expression  = "(http.host eq \"httpbin.dev1.pimenta.fun\" and http.request.uri.path eq \"/headers\")"
     description = "example request header transform rule"
     enabled     = true
     action      = "rewrite"
@@ -68,7 +68,7 @@ resource "cloudflare_ruleset" "transform_uri_http_headers" {
   }
 
   rules {
-    expression  = "(http.host eq \"sub.terraforma.pimenta.fun\")"
+    expression  = "(http.host eq \"sub.dev.pimenta.fun\")"
     description = "example request header transform rule"
     enabled     = true
     action      = "rewrite"

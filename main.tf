@@ -11,10 +11,10 @@ resource "cloudflare_zone" "zone" {
   jump_start = false
 }
 
-//output "zone_validation_record" {
-//  description = "The Zone verification key"
-//  value = "cloudflare-verify.${cloudflare_zone.zone.zone}  TXT  ${cloudflare_zone.zone.verification_key}"
-//}
+output "zone_validation_record" {
+  description = "The Zone verification key"
+  value = "cloudflare-verify.${cloudflare_zone.zone.zone}  TXT  ${cloudflare_zone.zone.verification_key}"
+}
 
 resource "cloudflare_zone_settings_override" "zone-settings" {
   zone_id = cloudflare_zone.zone.id

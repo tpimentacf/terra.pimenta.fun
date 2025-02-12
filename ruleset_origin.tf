@@ -13,7 +13,7 @@ resource "cloudflare_ruleset" "http_origin_example" {
     enabled     = false
     action      = "route"
     action_parameters {
-      host_header = "sub1.terraform.pimenta.fun"
+      host_header = "sub1.dev.pimenta.fun"
       origin {
         host = "sub1.terraform.pimenta.fun"
         port = 443

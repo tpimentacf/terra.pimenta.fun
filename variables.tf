@@ -5,7 +5,7 @@ variable "cloudflare_account_tag" {
 
 variable "cloudflare_zone_name" {
   type    = string
-  default = "terraform.pimenta.fun"
+  default = "dev.pimenta.fun"
 }
 
 variable "cloudflare_zone_plan" {
@@ -20,5 +20,5 @@ variable "cloudflare_zone_type" {
 
 variable "r2_bucket_name" {
   type    = string
-  default = "r2bucket"
+  default = "r2bucket-dev"
 }
