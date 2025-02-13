@@ -23,3 +23,4 @@ resource "cloudflare_record" "record_target" {
   ttl     = 1
   proxied = true
 }
+
