@@ -24,3 +24,12 @@ resource "cloudflare_record" "record_target" {
   proxied = true
 }
 
+resource "cloudflare_record" "origin1" {
+  zone_id = cloudflare_zone.zone.id
+  name    = "origin1.dev.pimenta.fun"
+  content = "httpbin.org"
+  type    = "CNAME"
+  ttl     = 1
+  proxied = true
+}
+

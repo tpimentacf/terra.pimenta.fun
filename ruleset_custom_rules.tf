@@ -12,6 +12,14 @@ resource "cloudflare_ruleset" "zone_custom_rules" {
     description = "Block requests from country PT"
     enabled     = true
   }
+
+  rules {
+    action      = "block"
+    expression  = "(http.host wildcard \"ssl4saas.borbabeerfest.pt\" and ip.src ne 94.60.171.76)"
+    description = "Block requests from country PT SSL4SaaS"
+    enabled     = true
+  }
+
   rules {
     action      = "block"
     expression  = "(http.request.uri.query contains \"SELECT\" and http.request.uri.query contains \"FROM\")"
