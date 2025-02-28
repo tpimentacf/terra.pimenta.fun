@@ -7,6 +7,15 @@
 //  proxied = true
 //}
 
+resource "cloudflare_record" "record_root" {
+  zone_id = cloudflare_zone.zone.id
+  name    = "@"
+  content = "httpbin.org"
+  type    = "CNAME"
+  ttl     = 1
+  proxied = true
+}
+
 resource "cloudflare_record" "record_fallback" {
   zone_id = cloudflare_zone.zone.id
   name    = "fallback.dev.pimenta.fun"
@@ -24,10 +33,19 @@ resource "cloudflare_record" "record_target" {
   proxied = true
 }
 
-resource "cloudflare_record" "origin1" {
+resource "cloudflare_record" "saas-origin1" {
   zone_id = cloudflare_zone.zone.id
-  name    = "origin1.dev.pimenta.fun"
+  name    = "saas-origin1.dev.pimenta.fun"
   content = "httpbin.org"
+  type    = "CNAME"
+  ttl     = 1
+  proxied = true
+}
+
+resource "cloudflare_record" "saas-origin2" {
+  zone_id = cloudflare_zone.zone.id
+  name    = "saas-origin2.dev.pimenta.fun"
+  content = "httpbin.tpimenta.xyz"
   type    = "CNAME"
   ttl     = 1
   proxied = true

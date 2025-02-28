@@ -36,8 +36,22 @@ resource "cloudflare_custom_hostname" "shaunik" {
 resource "cloudflare_custom_hostname" "ssl4saas_borbabeerfest_pt" {
   zone_id  = cloudflare_zone.zone.id
   hostname = "ssl4saas.borbabeerfest.pt"
-  custom_origin_server = "origin1.dev.pimenta.fun"
+  custom_origin_server = "saas-origin1.dev.pimenta.fun"
   custom_origin_sni = "ssl4saas.borbabeerfest.pt"
+  ssl {
+    certificate_authority = "google"
+    method = "txt"  // email  http
+    settings {
+      min_tls_version = "1.2"
+    }
+  }
+}
+
+resource "cloudflare_custom_hostname" "saas_borbabeerfest_pt" {
+  zone_id  = cloudflare_zone.zone.id
+  hostname = "saas.borbabeerfest.pt"
+  custom_origin_server = "saas-origin2.dev.pimenta.fun"
+  custom_origin_sni = "saas.borbabeerfest.pt"
   ssl {
     certificate_authority = "google"
     method = "txt"  // email  http
