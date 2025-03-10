@@ -22,7 +22,7 @@ resource "cloudflare_ruleset" "http_origin_example" {
   }
 
   rules {
-    action = "route"
+    action      = "route"
     description = "Rewrite requests to fetch from R2 bucket"
     enabled     = true
     expression  = "(starts_with(http.request.uri.path, \"/resources/\") and http.host ne \"r2.terraform.pimenta.fun\")"

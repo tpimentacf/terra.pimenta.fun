@@ -30,8 +30,8 @@ resource "cloudflare_ruleset" "cache_rules_example" {
     action_parameters {
       edge_ttl {
         mode    = "override_origin"
-        default = 86400 //cache-1dia
-        status_code_ttl {     // override default value if responseCode=200 cache-5sec
+        default = 86400   //cache-1dia
+        status_code_ttl { // override default value if responseCode=200 cache-5sec
           status_code = 200
           value       = 5
         }

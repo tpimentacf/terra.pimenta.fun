@@ -33,6 +33,15 @@ resource "cloudflare_record" "record_target" {
   proxied = true
 }
 
+resource "cloudflare_record" "ssl4saas-origin" {
+  zone_id = cloudflare_zone.zone.id
+  name    = "saas-origin.dev.pimenta.fun"
+  content = "httpbin.tpimenta.xyz"
+  type    = "CNAME"
+  ttl     = 1
+  proxied = true
+}
+
 resource "cloudflare_record" "saas-origin1" {
   zone_id = cloudflare_zone.zone.id
   name    = "saas-origin1.dev.pimenta.fun"
@@ -51,3 +60,11 @@ resource "cloudflare_record" "saas-origin2" {
   proxied = true
 }
 
+resource "cloudflare_record" "saas-origin3" {
+  zone_id = cloudflare_zone.zone.id
+  name    = "saas-origin3.dev.pimenta.fun"
+  content = "httpbin.tpimenta.xyz"
+  type    = "CNAME"
+  ttl     = 1
+  proxied = true
+}
