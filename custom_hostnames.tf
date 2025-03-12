@@ -6,7 +6,7 @@ resource "cloudflare_custom_hostname_fallback_origin" "fallback_origin" {
 resource "cloudflare_custom_hostname" "dev_pimenta_fun" {
   zone_id              = cloudflare_zone.zone.id
   hostname             = "dev.pimenta.fun"
-  custom_origin_server = "httpbin.org"
+  custom_origin_server = "saas-origin1.dev.pimenta.fun"
   custom_origin_sni    = "dev.pimenta.fun"
   ssl {
     certificate_authority = "google"
