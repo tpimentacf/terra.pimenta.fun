@@ -1,0 +1,302 @@
+roles_list                  = {
+    + "API Gateway"                                                  = {
+        + description = "Grants full access to API Gateway (including API Shield) for all domains in an account"
+        + id          = "67ff895d0db461b61dd911232fcbc790"
+        + name        = "API Gateway"
+      }
+    + "API Gateway Read"                                             = {
+        + description = "Grants read access to API Gateway (including API Shield) for all domains in an account"
+        + id          = "35956457e745b2af7331713a1ddf4fdb"
+        + name        = "API Gateway Read"
+      }
+    + Administrator                                                  = {
+        + description = "Can access the full account, except for membership management and billing."
+        + id          = "05784afa30c1afe1440e79d9351c7430"
+        + name        = "Administrator"
+      }
+    + "Administrator Read Only"                                      = {
+        + description = "Can access the full account in read-only mode."
+        + id          = "f2b20eaa1a5d4af42b53ac16238c99c7"
+        + name        = "Administrator Read Only"
+      }
+    + Analytics                                                      = {
+        + description = "Can read Analytics."
+        + id          = "6ddc5f80969d01105b5a0931e0079365"
+        + name        = "Analytics"
+      }
+    + "Audit Logs Viewer"                                            = {
+        + description = "Can view Audit Logs."
+        + id          = "9dfa4d1b73034f70ad896bf1c26d78f3"
+        + name        = "Audit Logs Viewer"
+      }
+    + Billing                                                        = {
+        + description = "Can edit the account’s billing profile and subscriptions."
+        + id          = "298ce8e7a2ba08b9d18ce0a32bb458ee"
+        + name        = "Billing"
+      }
+    + "Bot Management (Account-Wide)"                                = {
+        + description = "Can edit Bot Management (including Super Bot Fight Mode) configurations for all domains in account"
+        + id          = "17f13fba9173af84903c2be2b56240e5"
+        + name        = "Bot Management (Account-Wide)"
+      }
+    + "Brand Protection"                                             = {
+        + description = "Grants access to abuse reports and brand protection"
+        + id          = "524d8604ba35958b4a8d9e5fb06d5eeb"
+        + name        = "Brand Protection"
+      }
+    + "Cache Purge"                                                  = {
+        + description = "Can purge the edge cache."
+        + id          = "d1c17a97abf0aa371338074955877ba0"
+        + name        = "Cache Purge"
+      }
+    + "Cloudflare Access"                                            = {
+        + description = "Can edit Cloudflare Access."
+        + id          = "951e083054cc4f172986fc9be0aa17af"
+        + name        = "Cloudflare Access"
+      }
+    + "Cloudflare DEX"                                               = {
+        + description = "Can edit Cloudflare DEX."
+        + id          = "9f436dc7d8294a34345b6a8dc83fdf71"
+        + name        = "Cloudflare DEX"
+      }
+    + "Cloudflare Gateway"                                           = {
+        + description = "Can edit Cloudflare Gateway and read Access."
+        + id          = "10e95af809390ce236cbdcf03935e215"
+        + name        = "Cloudflare Gateway"
+      }
+    + "Cloudflare Images"                                            = {
+        + description = "Can edit Cloudflare Images assets"
+        + id          = "94bedef1a0bdd311891188867727e42d"
+        + name        = "Cloudflare Images"
+      }
+    + "Cloudflare R2 Admin"                                          = {
+        + description = "Can edit R2 buckets, objects, and associated configurations."
+        + id          = "6f83464b634142ce4ac573616256096e"
+        + name        = "Cloudflare R2 Admin"
+      }
+    + "Cloudflare R2 Read"                                           = {
+        + description = "Can read R2 buckets, objects, and associated configurations."
+        + id          = "084b982fe42511d15feb1411e4c9ce9e"
+        + name        = "Cloudflare R2 Read"
+      }
+    + "Cloudflare Stream"                                            = {
+        + description = "Can edit Cloudflare Stream media."
+        + id          = "8b081b06f8ffef0522957fc6929cdcca"
+        + name        = "Cloudflare Stream"
+      }
+    + "Cloudflare Zero Trust"                                        = {
+        + description = "Can edit Cloudflare Zero Trust."
+        + id          = "ef13f042efdd58f592148c035f291bfa"
+        + name        = "Cloudflare Zero Trust"
+      }
+    + "Cloudflare Zero Trust PII"                                    = {
+        + description = "Can access Cloudflare Zero Trust PII."
+        + id          = "f43d556e0699e47c9188ea1973a48e24"
+        + name        = "Cloudflare Zero Trust PII"
+      }
+    + "Cloudflare Zero Trust Read Only"                              = {
+        + description = "Can access Cloudflare for Zero Trust read only mode."
+        + id          = "156a872fa6df06e0e9b85d32afce6990"
+        + name        = "Cloudflare Zero Trust Read Only"
+      }
+    + "Cloudflare Zero Trust Reporting"                              = {
+        + description = "Can access Cloudflare for Zero Trust reporting data."
+        + id          = "b525e80fc64a4323a9ea666467d1865c"
+        + name        = "Cloudflare Zero Trust Reporting"
+      }
+    + "Cloudforce One Admin"                                         = {
+        + description = "Grants write access to Cloudforce One"
+        + id          = "2741c27a8ba4829e5e6ce89bfb778c16"
+        + name        = "Cloudforce One Admin"
+      }
+    + "Cloudforce One Read"                                          = {
+        + description = "Grants read access to Cloudforce One"
+        + id          = "fe700b87d989a8a99428e5258301e277"
+        + name        = "Cloudforce One Read"
+      }
+    + DNS                                                            = {
+        + description = "Can edit DNS records."
+        + id          = "069fe803647ed3609e93d041d5df6050"
+        + name        = "DNS"
+      }
+    + "Email Configuration Admin"                                    = {
+        + description = "Write acccess to all of CES, CASB, DLP, Gateway and Tunnels, except Mail Preview, Raw Email, on-demand reports, actions on emails, and Submissions, Submission Transparency. (Requires Cloudflare Zero Trust PII)"
+        + id          = "70035ec03549c8799c170a2afc25c139"
+        + name        = "Email Configuration Admin"
+      }
+    + "Email Integration Admin"                                      = {
+        + description = "Write acccess to CES account integration only, CASB, DLP, Gateway and Tunnels"
+        + id          = "43801681f525f111da3f15d07ffafdf1"
+        + name        = "Email Integration Admin"
+      }
+    + "Email Security Analyst"                                       = {
+        + description = "Write acccess to all of CES, except Settings which is read only (Requires Cloudflare Zero Trust PII)"
+        + id          = "d9290f651ced29c9524b79aa5ac4fcaf"
+        + name        = "Email Security Analyst"
+      }
+    + "Email Security Readonly"                                      = {
+        + description = "Read access to all of CES, cannot see Raw Email, take action on emails, or make Submissions (Requires Cloudflare Zero Trust PII)"
+        + id          = "3390240245b5d4d8be9f8c5789dca2d7"
+        + name        = "Email Security Readonly"
+      }
+    + "Email Security Reporting"                                     = {
+        + description = "Read access to CES Home, PhishGuard, and Submission Transparency"
+        + id          = "dfed41846ee1b4952dbeec65c7195e31"
+        + name        = "Email Security Reporting"
+      }
+    + Firewall                                                       = {
+        + description = "Can edit WAF, IP Firewall, and Zone Lockdown settings."
+        + id          = "1963e6e3aca5ac9a7a91609a0040ab02"
+        + name        = "Firewall"
+      }
+    + "HTTP Applications"                                            = {
+        + description = "Can view and edit HTTP Applications"
+        + id          = "08abaa5235c2196d5f3daf457190161b"
+        + name        = "HTTP Applications"
+      }
+    + "HTTP Applications Read"                                       = {
+        + description = "Can view HTTP Applications"
+        + id          = "ecd163368eb6c45b880362b0c098f5e1"
+        + name        = "HTTP Applications Read"
+      }
+    + "Hyperdrive Admin"                                             = {
+        + description = "Can edit Hyperdrive database configurations."
+        + id          = "fc86e6664bfb8ff279cd5a92f7424b50"
+        + name        = "Hyperdrive Admin"
+      }
+    + "Hyperdrive Readonly"                                          = {
+        + description = "Can read Hyperdrive database configurations."
+        + id          = "75312cadbc1dce48bfcd654da1a2ce03"
+        + name        = "Hyperdrive Readonly"
+      }
+    + "Load Balancer"                                                = {
+        + description = "Can edit Load Balancers, Pools, Origins, and Health Checks."
+        + id          = "c61d4237ab1c08a3d11feb6bd5e91c5a"
+        + name        = "Load Balancer"
+      }
+    + "Log Share"                                                    = {
+        + description = "Can edit Log Share configuration."
+        + id          = "3a170f9cfd62f321d6d835dc44bfe6dc"
+        + name        = "Log Share"
+      }
+    + "Log Share Reader"                                             = {
+        + description = "Can read Enterprise Log Share."
+        + id          = "340113a819900e1b4beebccc2ddb32e7"
+        + name        = "Log Share Reader"
+      }
+    + "Magic Network Monitoring"                                     = {
+        + description = "Can view and edit MNM configuration"
+        + id          = "6d7861f7d7d85b03272fd2b964190391"
+        + name        = "Magic Network Monitoring"
+      }
+    + "Magic Network Monitoring Admin"                               = {
+        + description = "Can view, edit, create, and delete MNM configuration"
+        + id          = "37a46bc5222ebb5577b2efc7fc467fb4"
+        + name        = "Magic Network Monitoring Admin"
+      }
+    + "Magic Network Monitoring Read-Only"                           = {
+        + description = "Can view MNM configuration"
+        + id          = "5c2cdbd23a00e169752f335bffc5988a"
+        + name        = "Magic Network Monitoring Read-Only"
+      }
+    + "Minimal Account Access"                                       = {
+        + description = "Can view account, and nothing else"
+        + id          = "5c35d2bf3a545e6b7560b826c0d23c39"
+        + name        = "Minimal Account Access"
+      }
+    + "Network Services (Magic)"                                     = {
+        + description = "Grants write access to network configurations for Magic services."
+        + id          = "e8307f861fd552343e8a582620da412e"
+        + name        = "Network Services (Magic)"
+      }
+    + "Network Services (Magic, Read-Only)"                          = {
+        + description = "Grants read access to network configurations for Magic services."
+        + id          = "6fd8c99c8a080a3a8f2b292c1515fb25"
+        + name        = "Network Services (Magic, Read-Only)"
+      }
+    + "Page Shield"                                                  = {
+        + description = "Grants write access to Page Shield across the whole account"
+        + id          = "344b7dd765da5a9de6230f7540cabb20"
+        + name        = "Page Shield"
+      }
+    + "Page Shield Read"                                             = {
+        + description = "Grants read access to Page Shield across the whole account"
+        + id          = "1b20b8701ab8a22f0229ff1c831a9e27"
+        + name        = "Page Shield Read"
+      }
+    + "SSL/TLS, Caching, Performance, Page Rules, and Customization" = {
+        + description = "Can edit most Cloudflare settings except for DNS and Firewall."
+        + id          = "75f36071fa06ebfac6da0c3f8ddbc4df"
+        + name        = "SSL/TLS, Caching, Performance, Page Rules, and Customization"
+      }
+    + "Super Administrator - All Privileges"                         = {
+        + description = "Can edit any Cloudflare setting, make purchases, update billing, and manage memberships. Super Administrators can revoke the access of other Super Administrators."
+        + id          = "33666b9c79b9a5273fc7344ff42f953d"
+        + name        = "Super Administrator - All Privileges"
+      }
+    + "Trust And Safety"                                             = {
+        + description = "Can view and request reviews for blocks"
+        + id          = "051312130d7384b97d7c4fa122eb7519"
+        + name        = "Trust And Safety"
+      }
+    + Turnstile                                                      = {
+        + description = "Grants full access to Turnstile"
+        + id          = "d4c68d56bf2ef665eb82994199a393fd"
+        + name        = "Turnstile"
+      }
+    + "Turnstile Read"                                               = {
+        + description = "Grants read access to Turnstile"
+        + id          = "2964cc9c4ebefdc6bf2bdbc4e106b906"
+        + name        = "Turnstile Read"
+      }
+    + "Vectorize Admin"                                              = {
+        + description = "Can edit Vectorize configurations."
+        + id          = "89c48528394f516ff4ce47c39036cf12"
+        + name        = "Vectorize Admin"
+      }
+    + "Vectorize Readonly"                                           = {
+        + description = "Can read Vectorize configurations."
+        + id          = "2d805933d825eb7ee214b294ae7d2e43"
+        + name        = "Vectorize Readonly"
+      }
+    + "Waiting Room Admin"                                           = {
+        + description = "Can edit Waiting Room configuration."
+        + id          = "87ce9ccd4a479a91edbf90747fd08c53"
+        + name        = "Waiting Room Admin"
+      }
+    + "Waiting Room Read"                                            = {
+        + description = "Can read waiting rooms configuration."
+        + id          = "629ae7e9cd43b305474cdecb23427234"
+        + name        = "Waiting Room Read"
+      }
+    + "Workers Admin"                                                = {
+        + description = "Can manage Cloudflare Workers and related developer platform products."
+        + id          = "57280df9f1a5806e04f065b07bbdd17a"
+        + name        = "Workers Admin"
+      }
+    + "Zaraz Admin"                                                  = {
+        + description = "Can edit and publish Zaraz configuration."
+        + id          = "fc67f46f32917cf9f0bdc082198cd747"
+        + name        = "Zaraz Admin"
+      }
+    + "Zaraz Edit"                                                   = {
+        + description = "Can edit Zaraz configuration."
+        + id          = "4b48b09177b06a45f6224af13e7afaf3"
+        + name        = "Zaraz Edit"
+      }
+    + "Zaraz Read"                                                   = {
+        + description = "Can read Zaraz configuration."
+        + id          = "69abc03715c77ae49be5e407f03d0650"
+        + name        = "Zaraz Read"
+      }
+    + "Zone Versioning (Account-Wide)"                               = {
+        + description = "Can view and edit Zone Versioning for all domains in account"
+        + id          = "973118f5c129494d4b7df026e598dce6"
+        + name        = "Zone Versioning (Account-Wide)"
+      }
+    + "Zone Versioning Read (Account-Wide)"                          = {
+        + description = "Can view Zone Versioning for all domains in account"
+        + id          = "ccf93de592091ce5e210c816337a37d4"
+        + name        = "Zone Versioning Read (Account-Wide)"
+      }
+  }
