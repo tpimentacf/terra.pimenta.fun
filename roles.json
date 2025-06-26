@@ -1,4 +1,4 @@
-roles_list                  = {
+roles_list = {
     + "API Gateway"                                                  = {
         + description = "Grants full access to API Gateway (including API Shield) for all domains in an account"
         + id          = "67ff895d0db461b61dd911232fcbc790"

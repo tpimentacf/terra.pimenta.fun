@@ -68,3 +68,12 @@ resource "cloudflare_record" "saas-origin3" {
   ttl     = 1
   proxied = true
 }
+
+resource "cloudflare_record" "test-dev" {
+  zone_id = cloudflare_zone.zone.id
+  name    = "test.dev.pimenta.fun"
+  content = "httpbin.tpimenta.xyz"
+  type    = "CNAME"
+  ttl     = 1
+  proxied = true
+}
