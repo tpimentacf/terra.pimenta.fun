@@ -8,7 +8,7 @@ resource "cloudflare_ruleset" "transform_uri_rule_path" {
   phase       = "http_request_transform"
 
   rules {
-    action = "rewrite"
+    action      = "rewrite"
     expression  = "(http.host eq \"terraforma.pimenta.fun\" and http.request.uri.path eq \"/old-path\")"
     description = "example URI path transform rule"
     enabled     = true
@@ -22,10 +22,10 @@ resource "cloudflare_ruleset" "transform_uri_rule_path" {
   }
 
   rules {
-    action     = "rewrite"
-    expression = "(starts_with(http.request.uri.path, \"/resources/\") and http.host ne \"r2.dev1.pimenta.fun\")"
+    action      = "rewrite"
+    expression  = "(starts_with(http.request.uri.path, \"/resources/\") and http.host ne \"r2.dev1.pimenta.fun\")"
     description = "Rewrite path"
-    enabled    = false
+    enabled     = false
     action_parameters {
       uri {
         path {

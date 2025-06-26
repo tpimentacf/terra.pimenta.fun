@@ -25,15 +25,15 @@ resource "cloudflare_ruleset" "cache_rules_example" {
   rules {
     ref         = "cache_settings_custom_cache_key"
     description = "Set cache settings and custom cache key for example.net"
-    expression  = "(http.host eq \"example.net\" and http.request.uri.path.extension in {\"eot\" \"aviv\"})"
+    expression  = "(http.host eq \"dev.pimenta.fun\")" //  and http.request.uri.path.extension in {\"eot\" \"aviv\"}
     action      = "set_cache_settings"
     action_parameters {
       edge_ttl {
         mode    = "override_origin"
-        default = 60
-        status_code_ttl {
+        default = 86400   //cache-1dia
+        status_code_ttl { // override default value if responseCode=200 cache-5sec
           status_code = 200
-          value       = 50
+          value       = 5
         }
         status_code_ttl {
           status_code_range {

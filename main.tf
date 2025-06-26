@@ -13,7 +13,7 @@ resource "cloudflare_zone" "zone" {
 
 output "zone_validation_record" {
   description = "The Zone verification key"
-  value = "cloudflare-verify.${cloudflare_zone.zone.zone}  TXT  ${cloudflare_zone.zone.verification_key}"
+  value       = "cloudflare-verify.${cloudflare_zone.zone.zone}  TXT  ${cloudflare_zone.zone.verification_key}"
 }
 
 resource "cloudflare_zone_settings_override" "zone-settings" {
